@@ -1,0 +1,127 @@
+@font-face {
+    font-family: viking;
+    src: url('./viking.ttf');
+}
+:root {
+     --leftPad: 15px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+}
+
+#left-banner {
+    background-image: url('bg.jpeg');
+    background-position: center;
+    background-size: cover;
+    width: 40vw;
+    height: 100vh;
+    display: block;
+    padding-top: 150px;
+}
+.right-area {
+    display: block;
+    padding: 10% 0px 0 0px;
+    background-color: rgba(210, 180, 140, 0.4);
+    text-align: center;
+}
+.title {
+    padding: 0 50px 0 50px;
+}
+.form-heading {
+    padding: 0 0 0 var(--leftPad);
+}
+.subtitle {
+    padding: 20px 0 20px 0 ;
+}
+h2.title, h2.subtitle {
+    color: rgb(3, 47, 3);
+}
+
+#right-form-area {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    border: 1px solid gray;
+    box-shadow:  2px 5px 15px rgba(0, 0, 0, 0.7);
+    background-color: lightgray;
+    padding: 25px;
+}
+.odin-banner {
+   display: flex;
+   text-align: center;
+   justify-content: center;
+   padding-top: 40px;
+   padding-bottom: 40px;
+   background:rgba(0, 0, 0, 0.4);
+}
+
+
+#odin {
+    height: 15vh;
+    padding-right: 20px;
+    padding-left: 20px;
+    display: flex;
+    align-self: center;
+}
+
+.odin-text {
+    position: relative;
+    color: white;
+    font-size: 4em;
+    padding-right: 25px;
+    font-family: 'viking';
+    display: flex;
+    align-items: center;   
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 5px var(--leftPad) var(--leftPad) var(--leftPad);
+}
+
+fieldset{ 
+    display: flex;
+    gap: 3rem;
+    border: none;
+}
+
+.input label {
+    font-size: 0.7rem;
+    font-weight: 500;
+    text-align: left;
+    margin-top: 10px;
+
+}
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 250px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    margin-top: 5px;
+}
+
+.submit {
+    display: block;
+    margin: 30px 0px 0px 30px;
+    height: 35px;
+    width: 150px;
+    border-radius: 15px;
+    background-color: #596D48;
+    color: whitesmoke;
+    border: 2px solid rgb(9, 55, 9);
+    box-shadow:  1px 1px 4px 2px rgba(0, 0, 0, 0.4);
+}
