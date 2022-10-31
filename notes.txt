@@ -1,0 +1,6 @@
+pattern="/[a-z]+/gi" 
+
+email
+pattern="/^[a-zA-Z0-9]+(?:\.[a-zA-Z0-9]+)*@[a-zA-Z0-9]+(?:\.[a-zA-Z0-9]+)*$/gm"
+
+pattern="/[0-9]{9}/gm"
